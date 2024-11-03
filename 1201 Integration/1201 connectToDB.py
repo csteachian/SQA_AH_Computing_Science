@@ -2,7 +2,7 @@
 
 import mysql.connector
 
-con = mysql.connector.connect(user='root', password='toor', host='127.0.0.1', database='sloco')
+con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='sloco')
 c = con.cursor()
 
 c.execute("""SELECT * FROM client""")
