@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AH CS CSS Media Query</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Hello Advanced Highers!</h1>
+    <p>Resize this browser tab to see the impact of this media query:</p>
+    <code>
+      <h3>body { background-color: green; }</h3>
+      <h3>@media screen and (max-width: 992px) {</h3>
+      <h3>&nbsp;&nbsp;&nbsp;body { background-color: orange; }</h3>
+      <h3>}</h3>
+      <h3>@media screen and (max-width: 600px) {</h3>
+      <h3>&nbsp;&nbsp;&nbsp;body { background-color: red; }</h3>
+      <h3>}</h3>
+    </code>
+    <p>
+      As the max-width of the @media query is exceeded, another takes over until
+      the width of the browser tab is > 992 px, then the body background colour
+      is used.
+    </p>
+  </body>
+</html>

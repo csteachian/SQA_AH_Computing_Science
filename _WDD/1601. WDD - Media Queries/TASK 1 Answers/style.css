@@ -1,0 +1,45 @@
+/* Set the background color of body to tan */
+body {
+  background-color: tan;
+}
+.example1 {
+  display: block;
+}
+.example2 {
+  display: none;
+}
+.example3 {
+  display: none;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  .example1 {
+    display: none;
+  }
+  .example2 {
+    display: block;
+  }
+  .example3 {
+    display: none;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+  .example1 {
+    display: none;
+  }
+  .example2 {
+    display: none;
+  }
+  .example3 {
+    display: block;
+  }
+}

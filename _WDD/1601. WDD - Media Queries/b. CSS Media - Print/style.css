@@ -1,0 +1,10 @@
+/* Set the background color of body to tan */
+body {
+  background-color: lightgray;
+}
+
+@media print {
+  img {
+    display: none;
+  }
+}
