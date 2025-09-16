@@ -23,7 +23,7 @@ def displayNode(thisNode):
 singlyLinkedList = [node() for x in range(10)]
 for x in range(10):
     singlyLinkedList[x].data = random.choice(letters)
-    singlyLinkedList[x].nextPtr = random.randint(0,9)
+    singlyLinkedList[x].nextPtr = random.randint(-1,9)
 headPtr = 4
 print(singlyLinkedList)
 firstNode = singlyLinkedList[headPtr]
