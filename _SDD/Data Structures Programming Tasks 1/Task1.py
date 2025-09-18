@@ -22,7 +22,7 @@ class ticket:
     screen_no : int = 1
     seat_no : str = "A1"
 
-customers = [ticket for index in range(5)]
+customers = [ticket() for index in range(5)]
 
 customers[0].movie_name = "Inside Out 2"
 customers[0].date = "06/09/2024"
