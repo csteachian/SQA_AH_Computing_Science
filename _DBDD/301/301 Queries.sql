@@ -1,0 +1,29 @@
+-- database: c:\Users\thefa\OneDrive\Documents\VSCode\SQA_AH_Computing_Science\_DBDD\301\AH_Dishes.db
+-- A.
+SELECT course, MAX(price) AS 'most expensive item'
+FROM Dishes
+WHERE portions >= 2
+GROUP BY course;
+
+-- B.
+-- database: c:\Users\thefa\OneDrive\Documents\VSCode\SQA_AH_Computing_Science\_DBDD\301\AH_Dishes.db
+
+SELECT Course, COUNT(*) AS 'Number of courses'
+FROM Dishes
+GROUP BY Course;
+
+-- C.
+-- database: ./AH_Dishes.db
+
+SELECT dishName, price
+FROM Dishes
+WHERE course = "Starter"
+ORDER BY price DESC;
+
+-- D.
+DELETE FROM Dishes
+WHERE dishName = "Panacotta";
+
+-- 3.
+SELECT Title FROM Movies
+WHERE Rating = (SELECT MAX(Rating) FROM Movies);
