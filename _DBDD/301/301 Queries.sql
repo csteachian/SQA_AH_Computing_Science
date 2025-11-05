@@ -38,3 +38,25 @@ WHERE Resort_ID = (
     ORDER BY COUNT(*) DESC
     LIMIT 1
 );
+-- I've taken this question out - it's way beyond Higher level.
+
+-- 4a. (NEW)
+SELECT Firstname, Surname
+FROM Instructor
+WHERE Resort_ID = (
+    SELECT Resort_ID
+    FROM Resort
+    WHERE Name = 'Glenshee'
+);
+
+-- 4b. (NEW)
+SELECT Firstname, Surname
+FROM Instructor
+WHERE Resort_ID = (
+    SELECT Resort_ID
+    FROM Resort
+    WHERE Lifts = (
+        SELECT MAX(Lifts)
+        FROM Resort
+    )
+);
