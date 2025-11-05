@@ -27,3 +27,14 @@ WHERE dishName = "Panacotta";
 -- 3.
 SELECT Title FROM Movies
 WHERE Rating = (SELECT MAX(Rating) FROM Movies);
+
+-- 4.
+SELECT Name, Postcode
+FROM Resort
+WHERE Resort_ID = (
+    SELECT Resort_ID
+    FROM Instructor
+    GROUP BY Resort_ID
+    ORDER BY COUNT(*) DESC
+    LIMIT 1
+);
