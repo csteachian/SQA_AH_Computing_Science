@@ -10,8 +10,11 @@
  $conn = mysqli_connect($server,$dbusername, $dbpassword,$dbname);
  $sql = "INSERT INTO member VALUES ('" .
         $username . "', '" . $password . "')";
-echo $sql;
+
+echo $sql; // shows the concatenated string
+
 mysqli_query($conn,$sql);
+
 mysqli_close($conn);
               
 
