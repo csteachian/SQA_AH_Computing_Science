@@ -15,7 +15,7 @@
 class ticket:
 
     def __init__(self): # constructor
-        self.movie_name = ""
+        self.movie_name = "<No movie>"
         self.date = "01/01/2024"
         self.time = "12:00"
         self.screen_no = 1
@@ -40,6 +40,10 @@ class ticket:
 customers = [ticket() for index in range(5)]
 
 customers[0].setMovieName("Inside Out 2")
-customers[0].setOtherStuff("06/09/2024", "16:00", 4, "J17")
+customers[1].setMovieName("Obsession")
+#customers[0].setOtherStuff("06/09/2024", "16:00", 4, "J17")
 
-print(customers[0].getMovieName(), customers[0].getOtherStuff())
+print(customers[0].getMovieName())
+print(customers[1].getMovieName())
+print(customers[2].getMovieName())
+#print(customers[0].getOtherStuff())
